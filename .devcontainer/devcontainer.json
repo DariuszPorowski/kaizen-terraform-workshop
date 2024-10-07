@@ -15,7 +15,9 @@
       "version": "1.9.7"
     }
   },
-  "postCreateCommand": {},
+  "postCreateCommand": {
+    "git-safe-dir": "git config --global --add safe.directory ${containerWorkspaceFolder}"
+  },
   "remoteUser": "vscode",
   "workspaceFolder": "/workspace",
   "workspaceMount": "source=${localWorkspaceFolder},target=${containerWorkspaceFolder},type=bind,consistency=cached",
